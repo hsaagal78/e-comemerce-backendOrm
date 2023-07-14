@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { canTreatArrayAsAnd } = require('sequelize/types/lib/utils');
+// const { canTreatArrayAsAnd } = require('sequelize/types/lib/utils');
 const { Category, Product } = require('../../models');
-const { sync, findAll } = require('../../models/Product');
+// const { sync, findAll } = require('../../models/Product');
 
 // The `/api/categories` endpoint
 
