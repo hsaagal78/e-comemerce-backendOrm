@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
-// import sequelize connection
+// import sequelize connection done
 const category_routes = require('./api/category-routes');
 const produc_routes = require('./api/prodruct-routes');
 const tag_routes = require('./api/tag-routes');
