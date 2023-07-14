@@ -11,7 +11,7 @@ const Sequelize = require('sequelize');
 //         decimalNumbers: true,
 //       },
 //     });
-const sequelize = new Sequelize('user_app_example', 'root', '', {
+const sequelize = new Sequelize('ecommerce_db', 'root', '', {
   host: 'localhost',
   dialect: 'mysql'
 });
