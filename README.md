@@ -35,11 +35,11 @@ To run this project locally, please follow these steps:
 
 ## Credit
 
--[Inquirer](https://www.npmjs.com/package/inquirer) - A library for creating interactive command-line interfaces.
--[mysql2](https://www.npmjs.com/package/mysql2) - Generate RFC-compliant mysql2 in    JavaScript.
--[Sequelize](https://www.npmjs.com/package/sequelize) 
--[Express] (https://www.npmjs.com/package/express)
--[Dotenv](https://www.npmjs.com/package/dotenv)
+- [Inquirer](https://www.npmjs.com/package/inquirer) A library for creating interactive command-line interfaces.
+- [mysql2](https://www.npmjs.com/package/mysql2) Generate RFC-compliant mysql2 in JavaScript.
+- [Sequelize](https://www.npmjs.com/package/sequelize) A library for creating interactive command-line interfaces.
+- [Express](https://www.npmjs.com/package/express) A library for creating interactive command-line interfaces.
+- [Dotenv](https://www.npmjs.com/package/dotenv) A library for creating interactive command-line interfaces.
 
 ## Contributing
 If you would like to contribute to this project, follow these steps:
