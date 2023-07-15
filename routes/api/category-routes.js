@@ -1,6 +1,6 @@
 const router = require('express').Router();
 // const { canTreatArrayAsAnd } = require('sequelize/types/lib/utils');
-const { Category } = require('../../models/Category');
+const { Category, Product } = require('../../models');
 // const { sync, findAll } = require('../../models/Product');
 
 // The `/api/categories` endpoint
@@ -9,7 +9,8 @@ router.get('/', async (req, res) => {
   // find all categories
   try{
     // be sure to include its associated Products. done
-    const categories = await Category.findAll({inclue: Product});
+    const categories = await Category.findAll({includes: [Product] });
+    
     res.json(categories);
   }catch (err) {
     console.error(err);
@@ -22,13 +23,15 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   // find one category by its `id` value. // be sure to include its associated Products done
   try {
-    const category = await Category.findByPk(req.params.id, { include: Product});
-    if (!category) return res.status(404).json({ message: 'Category not found'});
-  } catch (err) {
-      console.error(err);
-      res.status(500).json(err);
+    const category = await Category.findByPk(req.params.id, { includes: [Product ]});
+    if (!category) {
+      return res.status(404).json({ message: 'Category not found'});
   }
- 
+  res.json(category);
+} catch (err) {
+  console.error(err);
+  res.status(500).json(err);
+}
 });
 
 router.post('/', async (req, res) => {
