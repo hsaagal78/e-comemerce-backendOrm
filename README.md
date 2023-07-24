@@ -8,6 +8,7 @@ This is an e-commerce project that allows users to browse products, add, update 
 - [Technologies](#technologies)
 - [Contributing](#contributing)
 - [License](#license)
+- [Video](#video)
 
 
 ## Prerequisites
@@ -72,3 +73,6 @@ Second Page
 
 Update Note
 ![Screenshot](/examples/updatePage.png)
+
+## video
+[Click here. Welcome to see an example video of this codo](https://drive.google.com/file/d/1fHJlPTioZbzpd5PXqgxqb393AN8ZXmQC/view)
